@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RegisterActivity">
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/bar_layout"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/toolbar"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/scrollbar">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:gravity="center_horizontal"
+            android:padding="16dp"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Create a new account"
+                android:textSize="20sp"
+                android:textStyle="bold"/>
+
+            <com.rengwuxian.materialedittext.MaterialEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/username"
+                android:layout_marginTop="10dp"
+                app:met_floatingLabel="normal"
+                android:hint="Username"/>
+
+            <com.rengwuxian.materialedittext.MaterialEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/email"
+                android:inputType="textEmailAddress"
+                android:layout_marginTop="10dp"
+                app:met_floatingLabel="normal"
+                android:hint="Email"/>
+
+            <com.rengwuxian.materialedittext.MaterialEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/password"
+                android:inputType="textPassword"
+                android:layout_marginTop="10dp"
+                app:met_floatingLabel="normal"
+                android:hint="Password"/>
+
+            <com.rengwuxian.materialedittext.MaterialEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                app:met_floatingLabel="normal"
+                android:hint="Location"
+                android:id="@+id/location"
+                app:met_iconLeft="@drawable/location"
+                app:met_iconPadding="0dp"/>
+
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="10dp"
+                android:gravity="center">
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/caretaker"
+                    android:text="Caretaker"
+                    android:onClick="onRadioButtonClicked"/>
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/owner"
+                    android:layout_marginLeft="10dp"
+                    android:text="Pet Owner"
+                    android:onClick="onRadioButtonClicked"/>
+
+            </RadioGroup>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start"
+                android:text="About me"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                android:layout_marginTop="10dp"/>
+
+            <EditText
+                android:autofillHints="Never have I ever love nothing more than pets"
+                android:id="@+id/about_me"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:background="@drawable/custom_textbox"
+                android:hint="[Optional] I like cats, dogs..."
+                android:gravity="top"
+                android:inputType="textMultiLine"
+                android:overScrollMode="always"
+                android:padding="10dp"
+                android:scrollbarStyle="insideInset"
+                android:scrollbars="vertical"/>
+
+            <TextView
+                android:id="@+id/text_experience"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start"
+                android:text="Your experience with pets"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                android:layout_marginTop="10dp"
+                android:visibility="gone"/>
+
+            <EditText
+                android:autofillHints="I've been taking care of pets since the end of time"
+                android:id="@+id/experience"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:background="@drawable/custom_textbox"
+                android:hint="[Optional] I've been taking care of pets since I was..."
+                android:gravity="top"
+                android:inputType="textMultiLine"
+                android:overScrollMode="always"
+                android:padding="10dp"
+                android:scrollbarStyle="insideInset"
+                android:scrollbars="vertical"
+                android:visibility="gone"/>
+
+            <TextView
+                android:id="@+id/text_why_caretaker"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start"
+                android:text="Why do you want to be a caretaker?"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                android:layout_marginTop="10dp"
+                android:visibility="gone"/>
+
+            <EditText
+                android:autofillHints="It brings me joy..."
+                android:id="@+id/why_caretaker"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:background="@drawable/custom_textbox"
+                android:hint="[Optional] It brings me joy..."
+                android:gravity="top"
+                android:inputType="textMultiLine"
+                android:overScrollMode="always"
+                android:padding="10dp"
+                android:scrollbarStyle="insideInset"
+                android:scrollbars="vertical"
+                android:visibility="gone"/>
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="register"
+                android:id="@+id/btn_register"
+                android:background="@color/colorPrimaryDark"
+                android:layout_marginTop="15dp"
+                android:textColor="#fff"/>
+
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>
