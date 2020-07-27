@@ -25,10 +25,12 @@ Make sure you set up your Firebase and sync it. It uses:
 
 * Android Studio
 
+## Screenshots
+![Main Menu](./images/1.jpg)
 
 ## Authors
 
-* **Team SU** - *Initial work*
+* **Team SU** - Aleem, Viet, Nicholas, Riki, Aavan
 
 ## License
 
