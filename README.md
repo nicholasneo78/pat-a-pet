@@ -1,4 +1,4 @@
-# PetPet
+# Pat A Pet
 
 An "easy" Android application made by us for CE2006, Software Engineering
 
