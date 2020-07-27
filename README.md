@@ -1,4 +1,4 @@
-# Pat A Pet
+# Pat-A-Pet
 
 An "easy" Android application made by us for CE2006, Software Engineering. This project deals with PetBacker issues. PetBacker is a platform that lets you show the world about your pet or hire trusted Pet Sitter for boarding, walking, grooming and daycare securely.  
 
