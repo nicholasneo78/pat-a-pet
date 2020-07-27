@@ -23,7 +23,7 @@ Make sure you set up your Firebase and sync it. It uses:
 
 ## Built With
 
-* AndroidStudio
+* Android Studio
 
 
 ## Authors
